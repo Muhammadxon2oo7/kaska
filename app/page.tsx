@@ -313,7 +313,7 @@ export default function KaskaCreativeWebsite() {
       {/* Hero Section */}
 <section id="home" className="min-h-screen relative overflow-hidden flex items-center">
       {/* ORQA FON RANGLARI: Endi yanada OCHIQROQ VA YOQIMLI KO'K-BINAFSHA GRADIENT */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2c5282] via-[#426a9a] to-[#2c5282] opacity-95"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#6aa5ec] via-[#426a9a] to-[#2c5282] opacity-95"></div>
       <div className="absolute inset-0 bg-black/20"></div> {/* Yumshoqroq qora qatlam */}
 
       {/* Floating Elements - Faqat katta ekranlarda ko'rinadi (lg: prefix) */}
@@ -402,15 +402,15 @@ export default function KaskaCreativeWebsite() {
 
           {/* O'ng ustun - Rasm va Floating Cards */}
           <div className="relative animate-slideInRight mt-8 lg:mt-0">
-            <div className="relative z-10 p-2 md:p-4 bg-white/10 rounded-3xl shadow-2xl backdrop-blur-sm">
-             <Image
-  src="/hero.png"
-  alt="Professional Services"
-  fill // layout="fill"
-  className="rounded-2xl object-cover" // object-cover rasmning konteynerga moslashishini ta'minlaydi
-  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Responsivlikni ta'minlash uchun
-/>
-            </div>
+          <div className="relative z-10 p-2 md:p-4 bg-white/10 rounded-3xl shadow-2xl backdrop-blur-sm h-[320px] sm:h-[400px] md:h-[500px] lg:h-[700px] lg:aspect-w-16 lg:aspect-h-9">
+  <Image
+    src="/hero.png"
+    alt="Professional Services"
+    fill
+    className="rounded-2xl object-cover"
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  />
+</div>
 
             {/* Floating Cards - Faqat katta ekranlarda ko'rinadi (lg: prefix) */}
             <div className="absolute -top-5 -left-5 z-20 lg:block hidden">
