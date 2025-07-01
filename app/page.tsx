@@ -311,151 +311,152 @@ export default function KaskaCreativeWebsite() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a]"></div>
-<div className="absolute inset-0 bg-black/30"></div>
+  <section id="home" className="min-h-screen relative overflow-hidden">
+      {/* OCHIQROQ ORQA FON RANGLARI */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a2b42] via-[#2a3e5c] to-[#1a2b42]"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
 
+      {/* Floating Elements - Faqat katta ekranlarda ko'rinadi (lg: prefix) */}
+      <div className="absolute top-20 left-10 opacity-20 lg:block hidden">
+        <FloatingElement delay={0}>
+          <div className="w-20 h-20 bg-white/30 rounded-full"></div>
+        </FloatingElement>
+      </div>
+      <div className="absolute top-40 right-20 opacity-20 lg:block hidden">
+        <FloatingElement delay={2}>
+          <div className="w-16 h-16 bg-white/30 rounded-full"></div>
+        </FloatingElement>
+      </div>
+      <div className="absolute bottom-40 left-20 opacity-20 lg:block hidden">
+        <FloatingElement delay={4}>
+          <div className="w-12 h-12 bg-white/30 rounded-full"></div>
+        </FloatingElement>
+      </div>
 
-        {/* Floating Elements */}
-        <div className="absolute top-20 left-10 opacity-20">
-          <FloatingElement delay={0}>
-            <div className="w-20 h-20 bg-white/30 rounded-full"></div>
-          </FloatingElement>
-        </div>
-        <div className="absolute top-40 right-20 opacity-20">
-          <FloatingElement delay={2}>
-            <div className="w-16 h-16 bg-white/30 rounded-full"></div>
-          </FloatingElement>
-        </div>
-        <div className="absolute bottom-40 left-20 opacity-20">
-          <FloatingElement delay={4}>
-            <div className="w-12 h-12 bg-white/30 rounded-full"></div>
-          </FloatingElement>
-        </div>
-
-        <div className="relative z-10 container mx-auto px-4 py-20 min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-            <div className="text-white animate-slideInLeft">
-              <div className="flex items-center mb-6">
-                <Sparkles className="h-8 w-8 text-yellow-400 mr-3" />
-                <span className="text-lg font-medium">Professional Xizmatlar</span>
-              </div>
-
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Sizning uyingiz uchun
-                <span className="block text-blue-400">ishonchli hamkor</span>
-              </h1>
-
-              <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-                8 yillik tajriba bilan universal ustalar, yordamchi ishchilar, uy-ofis xizmatkorlari, alpinistlar,
-                demontajchilar va boshqa professional xizmatlarni taqdim etamiz. Sifat va ishonch - bizning asosiy
-                tamoyilimiz.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button
-                  size="lg"
-                  className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
-                  onClick={() => scrollToSection("contact")}
-                >
-                  Bog'lanish
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 bg-transparent"
-                  onClick={() => scrollToSection("services")}
-                >
-                  Xizmatlarni ko'rish
-                </Button>
-              </div>
-
-              <div className="flex items-center space-x-8">
-                <div className="flex items-center">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="w-10 h-10 bg-white/20 rounded-full border-2 border-white">
-                        <Image
-                          src={`/avatar-${i}.jpg`}
-                          alt={`Avatar ${i}`}
-                          width={40}
-                          height={40}
-                          className="w-full h-full rounded-full"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                  <span className="ml-3 text-white/90">5000+ mijoz</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <span className="ml-2 text-white/90">4.9 reyting</span>
-                </div>
-              </div>
+      <div className="relative z-10 container mx-auto px-4 py-20 min-h-screen flex items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+          <div className="text-white animate-slideInLeft">
+            <div className="flex items-center mb-6">
+              <Sparkles className="h-8 w-8 text-yellow-400 mr-3" />
+              <span className="text-lg font-medium">Professional Xizmatlar</span>
             </div>
 
-            <div className="relative animate-slideInRight">
-              <div className="relative z-10">
-                <Image
-                  src="/hero.png"
-                  alt="Professional Services"
-                  width={600}
-                  height={600}
-                  className="rounded-3xl shadow-2xl"
-                />
-              </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Sizning uyingiz uchun
+              <span className="block text-blue-400">ishonchli hamkor</span>
+            </h1>
 
-              {/* Floating Cards */}
-              <div className="absolute -top-10 -left-10 z-20">
-                <FloatingElement delay={1}>
-                  <Card className="p-4 glass-effect border-white/20">
-                    <CardContent className="p-0 flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                        <CheckCircle className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="text-white">
-                        <p className="font-semibold">Sifatli xizmat</p>
-                        <p className="text-sm text-white/70">Kafolat bilan</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </FloatingElement>
-              </div>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
+              8 yillik tajriba bilan universal ustalar, yordamchi ishchilar, uy-ofis xizmatkorlari, alpinistlar,
+              demontajchilar va boshqa professional xizmatlarni taqdim etamiz. Sifat va ishonch - bizning asosiy
+              tamoyilimiz.
+            </p>
 
-              <div className="absolute -bottom-10 -right-1 z-20">
-                <FloatingElement delay={3}>
-                  <Card className="p-4 glass-effect border-white/20">
-                    <CardContent className="p-0 flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                        <Clock className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="text-white">
-                        <p className="font-semibold">24/7 xizmat</p>
-                        <p className="text-sm text-white/70">Har doim tayyor</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </FloatingElement>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <Button
+                size="lg"
+                className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+                onClick={() => scrollToSection("contact")}
+              >
+                Bog'lanish
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 bg-transparent"
+                onClick={() => scrollToSection("services")}
+              >
+                Xizmatlarni ko'rish
+              </Button>
+            </div>
+
+            <div className="flex items-center space-x-8">
+              <div className="flex items-center">
+                <div className="flex -space-x-2">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="w-10 h-10 bg-white/20 rounded-full border-2 border-white">
+                      {/* Rasmlaringizni to'g'ri yo'llarini qo'yishingiz kerak */}
+                      <Image
+                        src={`/avatar-${i}.jpg`}
+                        alt={`Avatar ${i}`}
+                        width={40}
+                        height={40}
+                        className="w-full h-full rounded-full"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <span className="ml-3 text-white/90">5000+ mijoz</span>
+              </div>
+              <div className="flex items-center">
+                <div className="flex">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <span className="ml-2 text-white/90">4.9 reyting</span>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <div className="flex flex-col items-center">
-            <span className="text-sm mb-2">Pastga suring</span>
-            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+          <div className="relative animate-slideInRight">
+            <div className="relative z-10">
+              <Image
+                src="/hero.png"
+                alt="Professional Services"
+                width={600}
+                height={600}
+                className="rounded-3xl shadow-2xl mx-auto" // mx-auto added for better centering on smaller screens
+              />
+            </div>
+
+            {/* Floating Cards - Faqat katta ekranlarda ko'rinadi (lg: prefix) */}
+            <div className="absolute -top-10 -left-10 z-20 lg:block hidden">
+              <FloatingElement delay={1}>
+                <Card className="p-4 glass-effect border-white/20">
+                  <CardContent className="p-0 flex items-center space-x-3">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                      <CheckCircle className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="text-white">
+                      <p className="font-semibold">Sifatli xizmat</p>
+                      <p className="text-sm text-white/70">Kafolat bilan</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </FloatingElement>
+            </div>
+
+            <div className="absolute -bottom-10 -right-1 z-20 lg:block hidden">
+              <FloatingElement delay={3}>
+                <Card className="p-4 glass-effect border-white/20">
+                  <CardContent className="p-0 flex items-center space-x-3">
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                      <Clock className="h-6 w-6 text-white" />
+                    </div>
+                    <div className="text-white">
+                      <p className="font-semibold">24/7 xizmat</p>
+                      <p className="text-sm text-white/70">Har doim tayyor</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </FloatingElement>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <div className="flex flex-col items-center">
+          <span className="text-sm mb-2">Pastga suring</span>
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
