@@ -122,7 +122,7 @@ function FloatingElement({ children, delay = 0 }: { children: React.ReactNode; d
 
 export default function KaskaCreativeWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [scrollY, setScrollY] = useState(0)
+
   const [statsRef, statsVisible] = useIntersectionObserver(0.3)
 
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
@@ -149,11 +149,7 @@ export default function KaskaCreativeWebsite() {
     }
   }, [isVideoModalOpen])
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+ 
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
